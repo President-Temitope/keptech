@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'PagesController@index');
+Route::get('/', 'PageController@index');
 
 
 Route::group(['prefix' => 'admin'], function () {
