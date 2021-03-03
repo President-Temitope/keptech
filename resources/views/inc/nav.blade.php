@@ -1,21 +1,22 @@
-<nav class="navbar navbar-light navbar-expand-md navigation-clean">
+<nav class="navbar navbar-light navbar-expand-md navigation-clean fixed-top">
     <div class="container-fluid"><img class="img-fluid"
-                                      src="{{asset('assets/img/KEP%20TECHNOLOGY%20LIMITED%20logo.png')}}" width="150"
-                                      height="150">
+                                      src="{{setting('site.logo')}}" width="261"
+                                      height="86" alt="{{config('app.name')}}">
         <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span
                 class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navcol-1">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item" style="color: var(--bs-blue);"><a class="nav-link active" href="#">First Item</a>
+                <li class="nav-item"><a class="nav-link {{ $elementActive == 'home' ? 'active' : '' }}" href="/">Home</a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#">Second Item</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Third Item</a></li>
-                <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false"
-                                                 data-bs-toggle="dropdown" href="#">Dropdown </a>
-                    <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item"
-                                                                                                  href="#">Second
-                            Item</a><a class="dropdown-item" href="#">Third Item</a></div>
-                </li>
+                <li class="nav-item "><a class="nav-link {{ $elementActive == 'about' ? 'active' : '' }}" href="{{route('about')}}">About</a></li>
+                <li class="nav-item"><a class="nav-link {{ $elementActive == 'services' ? 'active' : '' }}" href="{{route('services')}}">Services</a></li>
+                  <li class="nav-item"><a class="nav-link {{ $elementActive == 'solutions' ? 'active' : '' }}" href="{{route('solutions')}}">Solutions</a></li>
+                  <li class="nav-item"><a class="nav-link {{ $elementActive == 'internships' ? 'active' : '' }}" href="{{route('internships')}}">Internships</a></li>
+                <li class="nav-item"><a class="nav-link {{ $elementActive == 'careers' ? 'active' : '' }}" href="{{route('careers')}}">Careers</a></li>
+                <li class="nav-item"><a class="nav-link {{ $elementActive == 'blog' ? 'active' : '' }}" href="{{route('blog')}}">Blog</a></li>
+                <li class="nav-item"><a class="nav-link {{ $elementActive == 'contact' ? 'active' : '' }}" href="{{route('contact')}}">Contact</a></li>
+
+
             </ul>
         </div>
     </div>

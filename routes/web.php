@@ -13,7 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'PageController@index');
+Route::get('/', 'PagesController@index')->name('home');
+Route::get('/about', 'PagesController@about')->name('about');
+Route::get('/blog', 'PagesController@blog')->name('blog');
+Route::get('/blog/{id}','PagesController@blogView');
+Route::get('/careers', 'PagesController@careers')->name('careers');
+Route::get('/contact', 'PagesController@contact')->name('contact');
+Route::get('/internship', 'PagesController@internship')->name('internships');
+Route::get('/services', 'PagesController@services')->name('services');
+Route::get('/solutions', 'PagesController@solutions')->name('solutions');
 
 
 Route::group(['prefix' => 'admin'], function () {
