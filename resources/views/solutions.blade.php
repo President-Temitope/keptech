@@ -10,7 +10,7 @@
             <div class="row">
                 @if(count($solutions) > 0)
                     @foreach($solutions as $solution)
-                <div class="col-md-4 cust_blogteaser"><a href="#"><img class="img-fluid" src="{{Voyager::image($solution->icon)}}"></a>
+                <div class="col-md-4 cust_blogteaser"><a href="#"><img class="img-fluid" src="{{Voyager::image($solution->icon)}}"/></a>
                     <h3>{{$solution->name}}</h3>
                     <p class="text-secondary" style="color: #000000;font-family: 'Open Sans', sans-serif;font-weight: 500;border-color: #000;">
                         {{$solution->desc}} </p><a class="h4" href="#"></a>
