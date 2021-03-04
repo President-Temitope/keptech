@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-6 item text">
 {{--                <h3 style="color: #ffffff;">{{config('app.name')}}</h3>--}}
-                <img src="{{setting('site.logo')}}" class="img-fluid" alt="{{config('app.name')}}" width="261"
+                <img src="{{Voyager::image(setting('site.logo'))}}" class="img-fluid" alt="{{config('app.name')}}" width="261"
                      height="86"/>
 
                 <p style="color: rgb(255,255,255); padding-top: 20px;">At Kep Technologies we make technology an asset for your business by

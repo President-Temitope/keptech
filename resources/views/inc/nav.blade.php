@@ -1,6 +1,6 @@
 <nav class="navbar navbar-light navbar-expand-md navigation-clean fixed-top">
     <div class="container-fluid"><img class="img-fluid"
-                                      src="{{setting('site.logo')}}" width="261"
+                                      src="{{Voyager::image(setting('site.logo'))}}" width="261"
                                       height="86" alt="{{config('app.name')}}">
         <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span
                 class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
